@@ -2,12 +2,12 @@ package application;
 
 public class Account {
 	
-	private int id; 
+	private String id; 
 	private String bankName; 
 	private double balance; 
 	private String date; 
 	
-	public Account(int id, String bankName, double balance, String date) {
+	public Account(String id, String bankName, double balance, String date) {
 		this.id = id; 
 		this.bankName = bankName; 
 		this.balance = balance; 
@@ -15,7 +15,7 @@ public class Account {
 	}
 	
 	// getters
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	
@@ -33,10 +33,6 @@ public class Account {
 	
 	
 	// settors 
-	
-	public void setId(int id) {
-		this.id = id;
-	}
 	
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
