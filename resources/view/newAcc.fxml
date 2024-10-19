@@ -9,12 +9,13 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.newAccController">
    <children>
       <Label layoutX="146.0" layoutY="37.0" text="Create new account" />
-      <DatePicker layoutX="108.0" layoutY="187.0" />
-      <TextField layoutX="108.0" layoutY="127.0" prefHeight="26.0" prefWidth="186.0" />
-      <TextField layoutX="107.0" layoutY="251.0" prefHeight="26.0" prefWidth="186.0" />
+      <DatePicker fx:id="dateInput" layoutX="108.0" layoutY="187.0" />
+      <TextField fx:id="nameInput" layoutX="108.0" layoutY="127.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="balanceInput" layoutX="107.0" layoutY="251.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="108.0" layoutY="103.0" text="Account Name" />
       <Label layoutX="108.0" layoutY="162.0" text="Opening Date" />
       <Label layoutX="108.0" layoutY="228.0" text="Opening Balance" />
       <Button layoutX="173.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSubmitOP" text="Submit" />
+      <Label fx:id="msgLabel" layoutX="185.0" layoutY="284.0" />
    </children>
 </AnchorPane>
